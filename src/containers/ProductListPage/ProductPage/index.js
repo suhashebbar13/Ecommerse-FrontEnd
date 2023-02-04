@@ -49,7 +49,7 @@ const ProductPage = (props) => {
                 display: 'flex',
                 justifyContent: 'center',
                 flexWrap: 'wrap',
-                margin: '10px 0'
+                margin: 'auto'
             }}>
                 {
                     page.products && page.products.map((product, index) => 

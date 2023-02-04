@@ -159,6 +159,27 @@ const ProductDetailsPage = (props) => {
                   {product.productDetails.description}
                 </span>
               </p>
+              <p style={{ display: "flex" }}>
+                <span
+                  style={{
+                    width: "100px",
+                    fontSize: "12px",
+                    color: "#878787",
+                    fontWeight: "600",
+                    marginRight: "20px",
+                  }}
+                >
+                  Other Description
+                </span>
+                <span
+                  style={{
+                    fontSize: "12px",
+                    color: "#212121",
+                  }}
+                >
+                  {product.productDetails.description}
+                </span>
+              </p>
             </div>
           </div>
         </div>

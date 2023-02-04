@@ -5,7 +5,7 @@ import Card from "../../../components/UI/Card";
 import { BiRupee } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
-import "./style.css";
+import classes from "./style.module.css";
 
 /**
  * @author
@@ -22,32 +22,34 @@ const ClothingAndAccessories = (props) => {
   }, []);
 
   return (
-    <div style={{ padding: "10px", position: "absolute", top:"17%", width:"99vw" }}>
-      <Card
-        style={{
-          boxSizing: "border-box",
-          padding: "10px",
-          display: "flex",
-        }}
-      >
-        {product.products.map((product) => (
-          <div className="caContainer">
+    <div
+      style={{
+        padding: "10px",
+        position: "absolute",
+        top: "17%",
+        width: "99vw",
+        display: "flex",
+        gap: "3rem",
+      }}
+    >
+              {product.products.map((product) => (
+      <div className={classes.card}>
             <Link
-              className="caImgContainer"
+              classNameName={classes.caImgContainer}
               to={`/${product.slug}/${product._id}/p`}
             >
-              <img src={`http://localhost:5000/public/${product.productPictures[0].img}`} />
+            <img
+              src={`http://localhost:5000/public/${product.productPictures[0].img} `}
+              className={classes.card__img}
+            />
             </Link>
-            <div>
-              <div className="caProductName">{product.name}</div>
-              <div className="caProductPrice">
-                <BiRupee />
-                {product.price}
-              </div>
-            </div>
-          </div>
-        ))}
-      </Card>
+            <h2 className={classes.card__title}>{product.name}</h2>
+            {/* <h2 className="card__price">{product.price}</h2> */}
+            <a href="#" className={classes.card__link}>
+              Buy Now
+            </a>
+      </div>
+      ))}
     </div>
   );
 };

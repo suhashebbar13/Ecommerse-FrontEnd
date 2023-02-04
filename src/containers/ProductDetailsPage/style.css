@@ -2,6 +2,9 @@
     display: flex;
     box-sizing: border-box;
     padding: 10px;
+    margin: auto;
+    position: relative;
+    top: 150px;
 }
 .verticalImageStack{
     width: 67px;
@@ -85,7 +88,8 @@
 .extraOffer, .discount{
     color: #388e3c;
     font-size: 12px;
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
+    margin: auto;
     font-weight: 600;
 }
 .priceContainer{

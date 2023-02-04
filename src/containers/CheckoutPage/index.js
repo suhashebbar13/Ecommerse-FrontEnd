@@ -77,7 +77,7 @@ const Address = ({
                 onClick={() => confirmDeliveryAddress(adr)}
                 style={{
                   width: "200px",
-                  margin: "10px 0",
+                  
                 }}
               />
             )}
@@ -265,9 +265,9 @@ const CheckoutPage = (props) => {
 
           {orderSummary && (
             <Card
-              style={{
-                margin: "10px 0",
-              }}
+              // style={{
+              //   margin: "10px 0",
+              // }}
             >
               <div
                 className="flexRow sb"

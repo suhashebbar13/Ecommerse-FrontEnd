@@ -61,13 +61,15 @@ const OrderDetailsPage = (props) => {
     <Layout>
       <div
         style={{
+          position: "relative",
+          top: "150px",
           width: "1160px",
-          margin: "10px auto",
+          margin: "auto",
         }}
       >
         <Card
           style={{
-            margin: "10px 0",
+            margin: "auto",
           }}
         >
           <div className="delAdrContainer">
@@ -88,7 +90,7 @@ const OrderDetailsPage = (props) => {
 
         {orderDetails.items.map((item, index) => (
           <Card
-            style={{ display: "flex", padding: "20px 0", margin: "10px 0" }}
+            style={{ display: "flex", padding: "20px 0", margin: "auto" }}
           >
             <div className="flexRow">
               <div className="delItemImgContainer">

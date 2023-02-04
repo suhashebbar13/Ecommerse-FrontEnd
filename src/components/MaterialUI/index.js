@@ -1,8 +1,8 @@
+
 import React, { useState } from "react";
 import "./style.css";
 
 /**
- * 
  * @function
  **/
 
@@ -103,15 +103,15 @@ const MaterialButton = (props) => {
   );
 };
 
-const DropdownMenuforlogin = (props) => {
-  return (
-    <div className="headerDropdownContainer">
+const DropdownMenu = (props) => {
+  return ( 
+    <div className="headerDropdownContainer" >
       {props.menu}
-      <div className="dropdownMenuforlogin">
+      <div className="dropdownforlogin">
         <div className="upArrowContainer">
           <div className="upArrow"></div>
         </div>
-        <div className="dropdownMenuforlogin">
+        <div className="dropdownMenu">
           {props.firstMenu}
           <ul className="headerDropdownMenu">
             {props.menus &&
@@ -161,4 +161,4 @@ const Breed = (props) => {
   );
 };
 
-export { Modal, MaterialInput, MaterialButton, DropdownMenuforlogin, Anchor, Breed };
+export { Modal, MaterialInput, MaterialButton, DropdownMenu, Anchor, Breed };

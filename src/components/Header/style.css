@@ -3,6 +3,11 @@
   height: 56px;
   background: #2874f0;
 }
+a{
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
 .subHeader{
   max-width: 1100px;
   width: 100%;
@@ -69,7 +74,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-.loginButton {
+/* .loginButton {
   display: block;
   width: 100px;
   height: 30px;
@@ -80,7 +85,7 @@
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-}
+} */
 .more {
   font-weight: bold;
   color: #fff;
@@ -97,7 +102,9 @@
   justify-content: center;
   margin: 0 20px
 }
-
+.firstmenu{
+  cursor: pointer;
+}
 .authContainer{
 color: #212121;
 margin: 0 auto;
@@ -106,21 +113,21 @@ height: 528px;
 max-width: 750px;
 min-width: 650px;
 }
-.row{
+/* .row{
 width: 100%;
 display: flex;
 flex-flow: row wrap;
 height: 528px;
   max-width: 750px;
   min-width: 650px;
-}
+} */
 
 .leftspace{
 width: 40%;
 height: 100%;
 color: #fff;
 letter-spacing: 1px;
-background-image: url('../../images/login-image.png');
+/* background-image: url('../../images/login-image.png'); */
 background-color: #2874f0;
 background-repeat: no-repeat;
 background-position: center 85%;

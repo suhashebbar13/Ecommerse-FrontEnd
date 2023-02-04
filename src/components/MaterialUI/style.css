@@ -26,6 +26,7 @@ position: absolute;
 color: #fff;
 right: 15px;
 font-size: 20px;
+cursor: pointer;
 }
 
 /* Material Input */
@@ -90,7 +91,7 @@ font-weight: 500;
 display: flex;
 justify-content: space-between;
 }
-.dropdownMenuforlogin{
+.dropdownMenu{
 right: 50%;
 position: absolute;
 width: 240px;
@@ -98,11 +99,14 @@ background: #fff;
 transform: translateX(50%);
 box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
 border-radius: 2px;
-z-index: 1;
-margin-top: 12px;
-display: none;
+z-index: 9999;
+margin-top: 5px;
+/* display: none; */
 }
-.headerDropdownContainer:hover .dropdown{
+.dropdownforlogin{
+    display: none;
+}
+.headerDropdownContainer:hover .dropdownforlogin{
 display: block;
 }
 .upArrow{
@@ -112,7 +116,7 @@ position: absolute;
 border-left: 10px solid transparent;
 border-right: 10px solid transparent;
 border-bottom: 10px solid #ffffff;
-top: -10px;
+/* top: -10px; */
 left: 50%;
 transform: translateX(-50%);
 }

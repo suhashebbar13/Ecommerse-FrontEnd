@@ -13,7 +13,8 @@
 }
 .delAddress{
     font-size: 12px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    margin: auto;
 }
 .delPhoneNumber{
     font-size: 12px;
